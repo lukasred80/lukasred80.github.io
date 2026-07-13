@@ -16,102 +16,113 @@
     h1 {
       text-align: center;
       color: #0053e2;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
-    p {
+    .subtitle {
       text-align: center;
       color: #555;
       margin-bottom: 40px;
+      font-size: 1.1rem;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
     }
     .card {
       background: white;
       border-radius: 16px;
-      padding: 24px;
+      padding: 28px 24px;
       box-shadow: 0 6px 16px rgba(0,0,0,0.1);
       transition: all 0.3s ease;
       text-align: center;
+      border-top: 6px solid #28a745;
     }
     .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 24px rgba(0,83,226,0.15);
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,83,226,0.18);
     }
     .card h3 {
-      margin: 15px 0 8px;
+      margin: 15px 0 10px;
       color: #0053e2;
+      font-size: 1.35rem;
     }
     .card p {
       color: #666;
-      font-size: 0.95rem;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
+      line-height: 1.5;
     }
     .btn {
       display: inline-block;
-      padding: 12px 28px;
+      padding: 14px 32px;
       background: #0053e2;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: 600;
-      transition: 0.3s;
+      transition: all 0.3s;
+      font-size: 1.02rem;
     }
     .btn:hover {
       background: #003d9e;
-      transform: scale(1.05);
+      transform: scale(1.06);
     }
-    .normal { border-top: 5px solid #28a745; }
-    .ofuscada { border-top: 5px solid #ffc220; }
+
+    /* Colores por tipo */
+    .normal { border-top-color: #28a745; }
+    .ofuscada { border-top-color: #ffc220; }
+    .debug { border-top-color: #e74c3c; }
+    .ipad { border-top-color: #9b59b6; }
   </style>
 </head>
 <body>
-  <h1>Verificador de Pedidos Walmart</h1>
-  <p>Elige la versión que deseas usar:</p>
+  <h1>🛒 Verificador de Pedidos Walmart</h1>
+  <p class="subtitle">Elige la versión que deseas utilizar</p>
 
   <div class="container">
 
+    <!-- Versión Normal -->
     <div class="card normal">
-      <h3><i class="fas fa-leaf"></i> Versión Normal v0.89</h3>
-      <p>Versión limpia y legible</p>
-      <a href="version-normal-v0.89.html" class="btn">Abrir →</a>
+      <h3><i class="fas fa-leaf"></i> Versión Normal v1</h3>
+      <p>Código limpio y legible (recomendada para desarrollo)</p>
+      <a href="WalmartVerificadordePedidos_AtajosReady_v1.html" class="btn">Abrir →</a>
     </div>
 
+    <!-- Ofuscada -->
     <div class="card ofuscada">
-      <h3><i class="fas fa-shield-alt"></i> Versión Ofuscada v0.89</h3>
-      <p>Código ofuscado</p>
-      <a href="version-ofuscada-v0.89.html" class="btn">Abrir →</a>
+      <h3><i class="fas fa-shield-alt"></i> Versión Ofuscada v1</h3>
+      <p>Código ofuscado para mayor protección</p>
+      <a href="WalmartVerificadordePedidos_AtajosReady_Obfuscated_v1.html" class="btn">Abrir →</a>
     </div>
 
+    <!-- Minimizada Ofuscada -->
     <div class="card ofuscada">
-      <h3><i class="fas fa-compress-alt"></i> Ofuscada Minimizada v0.89</h3>
-      <p>Versión más ligera</p>
-      <a href="version-ofuscada-min-v0.89.html" class="btn">Abrir →</a>
+      <h3><i class="fas fa-compress-alt"></i> Minimizada + Ofuscada v1</h3>
+      <p>Versión más ligera y optimizada</p>
+      <a href="WalmartVerificadordePedidos_AtajosReady_Minify_Obfuscated_v1.html" class="btn">Abrir →</a>
     </div>
 
-    <div class="card ofuscada">
-      <h3><i class="fas fa-bug"></i> Minimizada v0.90 (Debug + iPad)</h3>
-      <p>Con toast de debug y modo iPad</p>
-      <a href="version-v0.90.html" class="btn">Abrir →</a>
+    <!-- Debug -->
+    <div class="card debug">
+      <h3><i class="fas fa-bug"></i> v2 - Debug + Toast Info</h3>
+      <p>Incluye toast de información de debug</p>
+      <a href="WalmartVerificadordePedidos_AtajosReady_Minify_Obfuscated_v2.html" class="btn">Abrir →</a>
     </div>
 
-    <div class="card ofuscada">
-      <h3><i class="fas fa-tablet-alt"></i> v0.91 - iPad Force Resize v1</h3>
-      <a href="version-v0.91.html" class="btn">Abrir →</a>
+    <!-- iPad v1 -->
+    <div class="card ipad">
+      <h3><i class="fas fa-tablet-alt"></i> v3 - iPad Force Resize v1</h3>
+      <p>Optimizada con fuerza de redimensionado para iPad</p>
+      <a href="WalmartVerificadordePedidos_AtajosReady_Minify_Obfuscated_v3.html" class="btn">Abrir →</a>
     </div>
 
-    <div class="card ofuscada">
-      <h3><i class="fas fa-tablet-alt"></i> v0.92 - iPad Force Resize v2</h3>
-      <a href="version-v0.92.html" class="btn">Abrir →</a>
-    </div>
-
-    <div class="card ofuscada">
-      <h3><i class="fas fa-tablet-alt"></i> v0.93 - iPad Force Resize v3</h3>
-      <a href="version-v0.93.html" class="btn">Abrir →</a>
+    <!-- iPad v2 -->
+    <div class="card ipad">
+      <h3><i class="fas fa-tablet-alt"></i> v4 - iPad Force Resize v2</h3>
+      <p>Mejora adicional de redimensionado para iPad</p>
+      <a href="WalmartVerificadordePedidos_AtajosReady_Minify_Obfuscated_v4.htm" class="btn">Abrir →</a>
     </div>
 
   </div>
