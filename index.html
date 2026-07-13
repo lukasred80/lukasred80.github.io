@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Pedidos Walmart - Todas las Versiones</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f4f6f8, #e2efff);
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #0053e2;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,83,226,0.15);
+    }
+    .card h3 {
+      margin: 15px 0 8px;
+      color: #0053e2;
+    }
+    .card p {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #0053e2;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #003d9e;
+      transform: scale(1.05);
+    }
+    .normal { border-top: 5px solid #28a745; }
+    .ofuscada { border-top: 5px solid #ffc220; }
+  </style>
+</head>
+<body>
+  <h1>Verificador de Pedidos Walmart</h1>
+  <p>Elige la versión que deseas usar:</p>
+
+  <div class="container">
+
+    <div class="card normal">
+      <h3><i class="fas fa-leaf"></i> Versión Normal v0.89</h3>
+      <p>Versión limpia y legible</p>
+      <a href="version-normal-v0.89.html" class="btn">Abrir →</a>
+    </div>
+
+    <div class="card ofuscada">
+      <h3><i class="fas fa-shield-alt"></i> Versión Ofuscada v0.89</h3>
+      <p>Código ofuscado</p>
+      <a href="version-ofuscada-v0.89.html" class="btn">Abrir →</a>
+    </div>
+
+    <div class="card ofuscada">
+      <h3><i class="fas fa-compress-alt"></i> Ofuscada Minimizada v0.89</h3>
+      <p>Versión más ligera</p>
+      <a href="version-ofuscada-min-v0.89.html" class="btn">Abrir →</a>
+    </div>
+
+    <div class="card ofuscada">
+      <h3><i class="fas fa-bug"></i> Minimizada v0.90 (Debug + iPad)</h3>
+      <p>Con toast de debug y modo iPad</p>
+      <a href="version-v0.90.html" class="btn">Abrir →</a>
+    </div>
+
+    <div class="card ofuscada">
+      <h3><i class="fas fa-tablet-alt"></i> v0.91 - iPad Force Resize v1</h3>
+      <a href="version-v0.91.html" class="btn">Abrir →</a>
+    </div>
+
+    <div class="card ofuscada">
+      <h3><i class="fas fa-tablet-alt"></i> v0.92 - iPad Force Resize v2</h3>
+      <a href="version-v0.92.html" class="btn">Abrir →</a>
+    </div>
+
+    <div class="card ofuscada">
+      <h3><i class="fas fa-tablet-alt"></i> v0.93 - iPad Force Resize v3</h3>
+      <a href="version-v0.93.html" class="btn">Abrir →</a>
+    </div>
+
+  </div>
+</body>
+</html>
